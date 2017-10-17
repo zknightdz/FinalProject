@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:id="@+id/toolbar_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bạn có địa điểm thú vị?"
+                style="?android:attr/textAppearanceMedium"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"/>
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btnAddNewPost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chia sẻ ngay!"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:elevation="5dp"
+                fbutton:shadowColor="@color/color_asbestos"
+                fbutton:shadowEnabled="true"
+                fbutton:shadowHeight="5dp"
+                fbutton:cornerRadius="5dp"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/listPost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
