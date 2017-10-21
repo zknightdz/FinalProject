@@ -18,7 +18,6 @@ import android.widget.Toast;
 
 import com.duy.finalproject.activity.LoginActivity;
 import com.duy.finalproject.R;
-import com.duy.finalproject.activity.MainActivity;
 import com.duy.finalproject.api.InterfaceAPI;
 import com.duy.finalproject.config.ApiClient;
 import com.duy.finalproject.models.APIRespond;
@@ -65,7 +64,7 @@ public class RegisterFragment extends Fragment implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btnSignUp:
-                register();
+                //register();
                 break;
             case R.id.tvLogin:
                 loginActivity.showFragment(loginActivity.getFragmentLogin());

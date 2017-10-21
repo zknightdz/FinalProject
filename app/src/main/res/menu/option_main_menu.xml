@@ -7,5 +7,16 @@
         android:icon="@android:drawable/ic_menu_search"
         android:title="@string/abc_search_hint"
         app:showAsAction="always" />
-
+    <item
+        android:id="@+id/item_view_profile"
+        android:icon="@drawable/item_profile"
+        android:title="@string/View_Profile" />
+    <item
+        android:id="@+id/item_setting"
+        android:icon="@drawable/setting"
+        android:title="@string/Setting" />
+    <item
+        android:id="@+id/item_log_out"
+        android:icon="@drawable/logout"
+        android:title="@string/Log_Out" />
 </menu>

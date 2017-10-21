@@ -28,7 +28,6 @@ import info.hoang8f.widget.FButton;
  */
 
 public class HomeFragment extends Fragment implements View.OnClickListener {
-    private SearchView searchView;
     @BindView(R.id.btnAddNewPost) FButton btnAddNewPost;
 
 
@@ -50,22 +49,6 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
     public void onStart() {
         super.onStart();
         initViews();
-    }
-
-    @Override
-    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        inflater.inflate(R.menu.item_search, menu);
-        super.onCreateOptionsMenu(menu, inflater);
-        MenuItem searchItem = menu.findItem(R.id.action_search);
-
-        SearchManager searchManager = (SearchManager) getActivity().getSystemService(Context.SEARCH_SERVICE);
-
-        if (searchItem != null) {
-            searchView = (SearchView) searchItem.getActionView();
-        }
-        if (searchView != null) {
-            searchView.setSearchableInfo(searchManager.getSearchableInfo(getActivity().getComponentName()));
-        }
     }
 
     private void initViews() {
