@@ -2,14 +2,14 @@
 <tabs>
     <tab
         id="@+id/tab_home"
-        icon="@drawable/icon_favorites"
+        icon="@drawable/home"
         title="Home" />
     <tab
         id="@+id/tab_notif"
-        icon="@drawable/icon_favorites"
+        icon="@drawable/notification"
         title="Notification" />
     <tab
         id="@+id/tab_profile"
-        icon="@drawable/icon_favorites"
+        icon="@drawable/item_profile"
         title="Profile" />
 </tabs>
